@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="uk.ac.rgu.bleproximity" version="0.1">
+	<name>BLEProximity</name>
+    <description>Bluetooth Low Energy Proximity scanner plugin for Cordova / PhoneGap</description>
+    <license>GNU GPL V2</license>
+    <keywords>cordova,bluetooth,ble,low-energy,proximity</keywords>
+    <js-module src="www/device.js" name="device">
+        <clobbers target="device" />
+	</js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="BLEProximity">
+        		<param name="ios-package" onload="true" value="BLEProximity" />
+    		</feature>
+        </config-file>
+        <header-file src="src/ios/BLEProximity.h" />
+        <source-file src="src/ios/BLEProximity.m" />
+    </platform>
+</plugin>
