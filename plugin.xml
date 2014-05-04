@@ -4,7 +4,7 @@
     <description>Bluetooth Low Energy Proximity scanner plugin for Cordova / PhoneGap</description>
     <license>GNU GPL V2</license>
     <keywords>cordova,bluetooth,ble,low-energy,proximity</keywords>
-    <js-module src="www/device.js" name="device">
+    <js-module src="www/BLEProximity.js" name="device">
         <clobbers target="device" />
 	</js-module>
     <platform name="ios">
